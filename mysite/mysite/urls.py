@@ -20,4 +20,6 @@ from django.conf.urls import include
 urlpatterns = [
     path('chat/',include('chat.urls')),
     path('admin/', admin.site.urls),
+    path('', include('home.urls')),
+    path('django_plotly_dash/', include('django_plotly_dash.urls')),
 ]
